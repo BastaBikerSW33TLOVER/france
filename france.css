@@ -1,0 +1,20 @@
+.btn{
+text-decoration:solid;
+border: 5px solid rgb(227, 19, 168);
+padding: 6px;
+border-radius: 4px;
+color: rgb(226, 13, 204);
+}
+.btn:hover{
+    background-color: rgb(78, 77, 77);
+    color: beige;
+    padding: 50px;
+}
+@font-face{
+    font-family: Great_Vibes;
+    src: url('Great_Vibes-Regular.ttf');
+}
+body{
+
+    font-family: Great_Vibes;
+}
