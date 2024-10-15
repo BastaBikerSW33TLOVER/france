@@ -32,12 +32,10 @@ addBtn.addEventListener('click', () => {
     li.append(deleteBtn);
     ul.append(li);
     
-    // Clear the input fields
     number.value = '';
     names.value = '';
 });
 
-// Search function
 searchInput.addEventListener('input', () => {
     const searchTerm = searchInput.value.toLowerCase();
     const items = ul.getElementsByTagName('li');
@@ -46,11 +44,11 @@ searchInput.addEventListener('input', () => {
         const name = item.getElementsByClassName('cname')[0].innerText.toLowerCase();
         const number = item.getElementsByClassName('cnumber')[0].innerText.toLowerCase();
 
-        // Check if the name or number includes the search term
+        
         if (name.includes(searchTerm) || number.includes(searchTerm)) {
-            item.style.display = ''; // Show item
+            item.style.display = '';
         } else {
-            item.style.display = 'none'; // Hide item
+            item.style.display = 'none';
         }
     }
 });
